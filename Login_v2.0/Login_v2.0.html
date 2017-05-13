@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login v2.0</title>
+	<link rel="stylesheet" href="Login_v2.0.css">
+</head>
+<body class="bgcolor">
+<div id="header">
+<h1 class="titleW_h1">Login v2.0</h1>
+</div>
+<center>
+<div id="nav">
+<nav class="nav_t">
+			<!--////////////////////////////////////////////////////////-->
+			<li class="li_t"><a class="a_t" href="#MOUSE" id="mouse">MOUSE</a>
+			<div class="mouse" id="mouse_id">
+				<button id="onclicks"><strong>ONCLICK</strong></button>
+				<button id="ondblclicks"><strong>ONDBLCLICK</strong></button>
+				<button id="onauxclicks"><strong>ONAUXCLICK</strong></button>
+			</div></a>
+			</li>
+			<!--////////////////////////////////////////////////////////-->
+			<li class="li_t"><a class="a_t" href="#IMAGES" id="images">IMAGES</a>
+				<div class="image" id="image_id">
+				<img src="skate.jpg" alt="Error" id="logos" width="200px" height="200px" class="image_here">
+				</div>
+			</li>
+			<!--////////////////////////////////////////////////////////-->
+			<li class="li_t"><a href="#WARNING" class="a_t" id="warning">WARNING</a>
+			<div class="warning" id="warning_id">
+				Si se ha de borrar usuarios directo de la localStorage que se eliminen todos sus datos, ya que con un dato extra en la lista, la pagina hara mal los calculos a la hora de usar las funciones.<br/><br/>
+				<hr/>
+				<center>Gracias.</center>
+				</div>
+			</li>
+			<!--////////////////////////////////////////////////////////-->
+			<li class="li_t"><a class="a_t" id="about" href="#ABOUT">ABOUT</a>
+				<div class="about" id="about_id">
+					Esta es la version 2.0 de una pagina con registro donde los usuarios son guardados en la localStorage.<br/><br/>
+					Si quiere ir a la version anterior (1.0) debe hacer click acontinuacion <a href="D:\JEFFERSON\Login_v1.0\Login_v1.0.html">"Login_v1.0"</a>
+				</div>
+			</li>
+			<!--////////////////////////////////////////////////////////-->
+	</nav>
+</div>
+</center>
+<center>
+	<div id="section">
+		<center>
+		<div class="div_first">
+			<h2>Register</h2>
+			<form action="#" autocomplete="off">
+			<table>
+				<tr>
+					<th class="title">Name: </th>
+					<td class="left"><input type="text" id="name" placeholder="Nombre y Apellido" autofocus="true"></td>
+				</tr>
+				<tr>
+					<th class="title">Age: </th>
+					<td class="left"><input type="number" id="age" placeholder="Edad"></td>
+				</tr>
+				<tr>
+					<th class="title">Username: </th>
+					<td class="left"><input type="text" id="user" placeholder="Usuario"></td>
+				</tr>
+				<tr>
+					<th class="title">Password: </th>
+					<td class="left"><input type="password" id="password" placeholder="Clave"></td>
+				</tr>
+			</table>
+			<button id="buttonsave">Register</button>
+			</form>
+		</div>
+	<!--=================================================================================-->
+		<hr class="deco"/>
+	<!--=================================================================================-->
+		<br/><br/>
+		<h2 id="title_user">Users </h2>
+		<div class="div_second" id="div_second">
+			<button id="buttonload">Load</button>
+			<button id="buttondelete">Delete</button>
+			<div style="width:600px; height:318px; overflow:auto;">
+				<table border="1" id="table">
+					<tr>
+						<th style="width:50px;">#ID</th>
+						<th style="width:140px;">NAME</th>
+						<th style="width:50px;">AGE</th>
+						<th style="width:140px;">USERNAME</th>
+						<th style="width:140px;">PASSWORD</th>
+						<th><input type="checkbox" id="especialCB" style="width:25px; height:25px;"></th>
+					</tr>
+				</table>
+			</div>
+			<div id="show_1_id">
+			</div>
+			<div id="show_2_id">
+			</div>
+			<br/>
+		</div>
+	<!--=================================================================================-->
+		<hr class="deco"/>
+	<!--=================================================================================-->
+		<div id="login_div">
+			<h2>Login</h2>
+			<table>
+				<tr>
+					<th>Username: </th>
+					<td><input type="text" id="input_user"></td>
+				</tr>
+				<tr>
+					<th>Password: </th>
+					<td><input type="password" id="input_password"></td>
+				</tr>
+			</table>
+			<button id="buttoninput">Login</button>
+			<button id="buttonsalir">salir</button>
+			<br/>
+			<br/>
+			<div class="confirm_user" id="confirm_user_id">
+			</div>
+			<br/>
+	<!--=================================================================================-->
+			<hr class="deco"/>
+	<!--=================================================================================-->
+			<div class="date_div" id="date_div_id">
+				<h2>User Date</h2>
+				<div id="here_user">
+				</div>
+				<br/>
+				<button id="buttondate">Refresh</button>
+			</div>
+		</div>
+		</center>
+	</div>
+</center>
+<br/>
+<footer>Jefferson Torres</footer>
+<script src="Login_v2.0.js"></script>
+</body>
+</html>
